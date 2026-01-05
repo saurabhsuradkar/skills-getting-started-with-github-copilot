@@ -88,8 +88,8 @@ section h3 {
 }
 
 .participants-list {
-  list-style-type: disc;
-  padding-left: 20px;
+  list-style-type: none;
+  padding-left: 0;
   margin: 0;
   max-height: 110px; /* prevent very long lists from stretching the card */
   overflow-y: auto;
@@ -99,6 +99,25 @@ section h3 {
   font-size: 14px;
   color: #555;
   margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background-color: transparent;
+  color: #c62828;
+  border: none;
+  padding: 2px 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.2s, background-color 0.2s;
+  border-radius: 3px;
+}
+
+.delete-btn:hover {
+  background-color: #ffcdd2;
+  color: #b71c1c;
 }
 
 .no-participants {
